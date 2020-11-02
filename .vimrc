@@ -7,29 +7,17 @@ set relativenumber
 set encoding=utf-8
 
 syntax enable
-set ts=8
+set ts=4
 set autoindent
 set shiftwidth=4
-set cursorline
 set showmatch
-set backspace=indent,eol,start
-
-" appending path for find
-
-" pane resizing 
-nnoremap <silent><Leader>+ :exe "resize " . (winheight(0) * 5/4)<CR>
-nnoremap <silent><Leader>- :exe "resize " . (winheight(0) * 4/5)<CR>
-nnoremap <silent><Leader>> :exe "vertical resize " . (winwidth(0) * 5/4)<CR>
-nnoremap <silent><Leader>< :exe "vertical resize " . (winwidth(0) * 4/5)<CR>
-
-let python_highlight_all=1
 
 " Enable folding
 "  use zc for folding and zo for unfolding 
 set foldmethod=indent
 set foldlevel=99
 
-" nerdtree toggle remap
+" nerdtree toggle remap=============================
 map <C-n> :NERDTreeToggle<CR>
 
 " --------------------Plugs-------------------------
@@ -48,14 +36,14 @@ Plug 'https://github.com/sillybun/vim-repl'
 
 call plug#end()
 
-"Powerline 
+"Powerline=========================================== 
 python3 from powerline.vim import setup as powerline_setup
 python3 powerline_setup()
 python3 del powerline_setup
 
 set laststatus=2
 
-" vim-repl
+" vim-repl===========================================
 let g:repl_program = {
 			\	'python': ['ipython'],
 			\	'default': ['bash']
@@ -72,7 +60,7 @@ autocmd Filetype python nnoremap <F10> <Esc>:REPLPDBN<Cr>
 autocmd Filetype python nnoremap <F11> <Esc>:REPLPDBS<Cr>
 let g:repl_position = 3
 
-
+"YCM=================================================
 " GoTo def YCM
 let g:ycm_autoclose_preview_window_after_completion=1
 map <leader>g :YcmCompleter GoToDefinitionElseDeclaration<CR>
