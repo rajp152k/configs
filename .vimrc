@@ -31,6 +31,7 @@ Plug 'https://github.com/ycm-core/YouCompleteMe'
 Plug 'https://github.com/lark-parser/vim-lark-syntax'
 Plug 'https://github.com/plasticboy/vim-markdown'
 Plug 'https://github.com/sillybun/vim-repl'
+Plug 'https://github.com/goerz/jupytext.vim'
 " --------------------Visual changes---------------
 "=================================================
 
@@ -46,7 +47,8 @@ set laststatus=2
 " vim-repl===========================================
 let g:repl_program = {
 			\	'python': ['ipython'],
-			\	'default': ['bash']
+			\	'default': ['bash'],
+			\	'markdown':['ipython']
 			\	}
 
 let g:repl_cursor_down = 1
