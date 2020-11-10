@@ -44,6 +44,9 @@ python3 del powerline_setup
 
 set laststatus=2
 
+"jupytext.vim -- use in conjunction with vim-repl
+let g:jupytext_fmt='py'
+
 " vim-repl===========================================
 let g:repl_program = {
 			\	'python': ['ipython'],
