@@ -1,6 +1,12 @@
 #! /bin/bash
 # backup configs
 
-cp ~/.tmux.conf .
-cp ~/.vimrc .
-cp ~/.bash_aliases .
+cd ~/links/configs
+
+cp -f ~/.tmux.conf .
+cp -f ~/.vimrc .
+cp -f ~/.bash_aliases .
+
+git add .
+git commit -m "update"
+git push
