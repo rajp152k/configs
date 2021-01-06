@@ -2,4 +2,4 @@
 
 ---
 
-- everything related configurations for utilities I use.
+- related configurations for utilities I use.
