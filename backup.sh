@@ -3,10 +3,9 @@
 
 cd ~/links/configs
 
-cp -f ~/.tmux.conf .
-cp -f ~/.vimrc .
-cp -f ~/.bash_aliases .
+cp  ~/.tmux.conf ./tmux/
+cp  ~/.vimrc ./vim/
+cp  ~/.bash_aliases ./shell
 
-git add .
-git commit -m "update"
-git push
+cp -r ~/.vim/autoload ./vim_autoloads
+
