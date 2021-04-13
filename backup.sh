@@ -7,5 +7,5 @@ cp  ~/.tmux.conf ./tmux/
 cp  ~/.vimrc ./vim/
 cp  ~/.bash_aliases ./shell
 
-cp -r ~/.vim/autoload ./vim_autoloads
+cp -r ~/.vim/autoload ./vim/autoloads
 
